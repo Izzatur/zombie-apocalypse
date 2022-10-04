@@ -13,7 +13,7 @@ You can find all the API documentation [here](https://documenter.getpostman.com/
 ### Steps to setup the application in local environment:
 1. Install postgreSQL [here](https://www.postgresql.org/download/)
 2. Install postgGIS by follow this tutorial [here](http://www.bostongis.com/PrinterFriendly.aspx?content_name=postgis_tut01)
-3. Install pgAdmin4 [here](pgadmin.org/download/)
+3. Install pgAdmin4 [here](https://pgadmin.org/download/)
 3. Open the .env file and replace DB_PASSWORD with your own postgreSQL password
 
 ### Steps to run the application:
