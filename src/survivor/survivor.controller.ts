@@ -1,4 +1,4 @@
-import { Body, Controller, Get, HttpException, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, HttpException, Patch, Post, Query } from '@nestjs/common';
 import { Survivor } from './survivor.entity';
 import { SurvivorService } from './survivor.service';
 
@@ -37,7 +37,7 @@ export class SurvivorController {
         return await this.survivorService.readSurvivor(id);
     }
 
-    @Post('update')
+    @Patch('update')
     async update(@Query('id') id: string, @Body('location') location: string) {
         if (!id || !location) {
             throw new HttpException('Incomplete survivor information', 400);
